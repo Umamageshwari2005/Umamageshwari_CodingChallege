@@ -16,4 +16,6 @@ public interface IPlayerService {
     List<Player> getAllPlayers();
 
     void deletePlayer(int playerId);
+    
+    Player findPlayerWithHighestMatches();
 }

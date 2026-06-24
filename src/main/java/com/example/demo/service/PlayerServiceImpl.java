@@ -89,4 +89,10 @@ public class PlayerServiceImpl implements IPlayerService {
 
         repo.delete(player);
     }
+    
+    @Override
+    public Player findPlayerWithHighestMatches() {
+
+        return repo.findPlayerWithHighestMatches();
+    }
 }

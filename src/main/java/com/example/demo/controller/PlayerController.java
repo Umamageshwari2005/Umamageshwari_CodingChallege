@@ -52,5 +52,10 @@ public class PlayerController {
                   public List<Player> getAllPlayers(){
                 	  return service.getAllPlayers();
                   }
+                  
+                  @GetMapping("/highestMatches")
+                  public Player getPlayerWithHighestMatches() {
+                      return service.findPlayerWithHighestMatches();
+                  }
 }
 
